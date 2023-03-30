@@ -16,10 +16,12 @@ services:
       - ./composer.lock:/app/composer.lock:cached
       - ./Configuration/:/app/Configuration/:cached
       - ./DistributionPackages/:/app/DistributionPackages/:cached
-      # if you work on other packages, you need to add them here.
+      # if you work on other packages, you need to add them here
 
       # WARNING: you need to add all packages from Distribution packages here ONE BY ONE, see the notice below for explanation.
       - ./Packages/Sites/:/app/Packages/Sites/:cached
+      - ./Packages/Bitzinger.Site/:/app/Packages/Bitzinger.Site/:cache
+      - ./Packages/Bitzinger.Site/:/app/Packages/Vendor.Site/:cache
     ports:
       - 8081:8081
   # DB
