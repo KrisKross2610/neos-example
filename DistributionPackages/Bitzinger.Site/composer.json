@@ -1,0 +1,21 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "bitzinger/site",
+    "autoload": {
+        "psr-4": {
+            "Bitzinger\\Site\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Bitzinger.Site"
+        }
+    }
+}
